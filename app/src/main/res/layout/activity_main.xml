@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#477ab2"
+    >
+
+    <TextView
+        android:id="@+id/tvExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="10dp"
+        android:width="300dp"
+        android:text="External Storage"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#ffff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvExternal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="45dp"
+        android:width="120dp"
+        android:text="User Name: "
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#ffff" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvExternal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="41dp"
+        android:width="220dp"
+        android:height="40dp"
+        android:background="#ffff"
+        android:hint="User Name"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#97602e" />
+
+    <Button
+        android:id="@+id/btn_External_Public"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUserName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="98dp"
+        android:width="220dp"
+        android:background="#ffff"
+        android:text="External Public"
+        android:onClick="external_public"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_External_Private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_External_Public"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="40dp"
+        android:width="220dp"
+        android:text="External Private"
+        android:onClick="external_Private"
+        android:background="#ffff"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_External_Private"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="36dp"
+        android:width="220dp"
+        android:text="Database"
+        android:background="#ffff"
+        android:textSize="20dp"
+        android:onClick="Database"/>
+
+
+
+
+</RelativeLayout>

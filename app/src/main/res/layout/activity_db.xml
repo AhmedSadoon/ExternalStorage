@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DBActivity">
+
+    <TextView
+        android:id="@+id/tvDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="200dp"
+        android:text="External Data Base"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDatabase"
+        android:layout_marginTop="67dp"
+        android:width="120dp"
+        android:text="UserName: "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#1e72c1" />
+
+    <TextView
+        android:id="@+id/tv_UserName"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDatabase"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="72dp"
+        android:width="120dp"
+        android:text="User Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#1e72c1" />
+
+
+
+    <Button
+        android:id="@+id/btn2External_Private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_UserName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="102dp"
+        android:width="220dp"
+        android:text="External Private"
+        android:textSize="20dp"
+        android:onClick="External_Private"/>
+
+    <Button
+        android:id="@+id/btn2_External_Public"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2External_Private"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="43dp"
+        android:width="200dp"
+        android:text="External Public"
+        android:textSize="20dp"
+        android:onClick="External_Public"/>
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2_External_Public"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="96dp"
+        android:width="200dp"
+        android:onClick="Back"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textSize="21dp" />
+
+</RelativeLayout>
